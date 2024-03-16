@@ -11,10 +11,13 @@
 }
 
 header {
+    display: grid;
     grid-area: header;
+    height: 40px;
     background-color: black;
     color: white;
     text-align: center;
+    align-items: center;
     
 }
 .left {
@@ -32,19 +35,22 @@ main {
     padding: 2rem;
 }
 footer {
+    display: grid;
     grid-area: footer;
     background-color: black;
     color: white;
     text-align: center;
+    align-items: center;
+    height: 40px;
 }
 
 
 /* FOR 440PX */
 @media (max-width: 440px) {
 
-.container {
-    grid-template-areas: "header" "left" "main" "right" "footer";
-    grid-template-rows: auto auto 1fr auto auto;
-    grid-template-columns: 100%;
+    .container {
+        grid-template-areas: "header" "left" "main" "right" "footer";
+        grid-template-rows: auto auto 1fr auto auto;
+        grid-template-columns: 100%;
 }
 }
